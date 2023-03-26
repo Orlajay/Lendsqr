@@ -132,3 +132,7 @@ body {
 #pabloLogin .logIn .loginButton {
   cursor: pointer;
 }
+
+#pabloLogin .logIn .forgot {
+  cursor: pointer;
+}
