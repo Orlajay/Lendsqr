@@ -136,3 +136,7 @@ body {
 #pabloLogin .logIn .forgot {
   cursor: pointer;
 }
+
+#pabloLogin .logIn .showpassword {
+  cursor: pointer;
+}
