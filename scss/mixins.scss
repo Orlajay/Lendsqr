@@ -1,0 +1,96 @@
+//mixins
+
+
+
+
+@mixin topbar{
+    
+    .lendImg{
+        padding-bottom: 50px;
+    }
+}
+
+
+@mixin login{
+    .loginWrapper{
+        padding-top: 50px;
+        h1{
+            color: $deepblue;
+            font-size: 42px;
+            margin: 0px;
+        }
+
+        p{
+            color: $fadetext;
+        }
+    }
+
+    .detail{
+        font-size: 18px;
+        padding-bottom: 22px;
+
+    }
+
+    .mail{
+        font-size: 12px;
+        margin-bottom: 15px;
+        border: 2px solid rgba(84, 95, 125, 0.15);
+        border-radius: 5px; 
+        p{
+            margin: 0px;
+            padding: 12px;
+            color: $fadetext;
+        }
+    }
+
+    .password{
+        display: flex;
+        justify-content: space-between;
+        font-size: 12px;
+        border: 2px solid rgba(84, 95, 125, 0.15);
+        border-radius: 5px; 
+        margin-bottom: 12px;
+        p{
+            margin: 0px;
+            padding: 12px;
+            color: $fadetext;  
+        }
+
+        .showpassword{
+            margin: 0px;
+            color: $lightblue;
+        }
+    }
+
+    .forgot{
+        color: $lightblue;
+        font-size: 12px;
+        margin-bottom: 22px;
+    }
+
+    .loginButton{
+        margin: 0px;
+        background: $lightblue;
+        color: white;
+        font-size: 12px;
+        text-align: center;
+        padding: 12px;
+        border-radius: 5px;
+        
+    }
+
+    
+
+}
+
+@mixin media($query){
+    @media screen and (max-width: $query){
+        @content;
+    }
+
+
+}
+
+
+
+  

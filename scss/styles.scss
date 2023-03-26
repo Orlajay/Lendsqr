@@ -1,0 +1,58 @@
+@import "reset";
+@import "variables";
+@import "mixins";
+
+
+
+body{
+    padding-top: 40px;
+    padding-left: 40px;
+}
+
+
+
+
+#topbar{
+    padding-right: 30px;
+    @include topbar;
+    @include media(1000px){
+        padding: 0px;
+        display: none;  
+    }
+    
+}
+
+#pabloLogin{
+    width: 100%;
+    display: flex;
+    padding-right: 30px;
+    @include media(1000px){
+        flex-direction: column;
+        align-items: center;
+        padding: 0px;
+    }
+
+    img{
+        padding-top: 30px;
+        padding-right: 30px;
+        @include media(1000px){
+            width: 800px;
+        }
+    }
+
+    .logIn{
+        padding-left: 50px;
+        width: 350px;
+        @include login;
+        @include media(1000px){
+            width: 600px;
+            padding: 0px;
+        }
+        .loginWrapper{
+            @include media(1000px){
+                text-align: center;
+            } 
+        }
+    }
+}
+
