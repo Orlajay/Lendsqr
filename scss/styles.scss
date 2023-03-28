@@ -1,0 +1,36 @@
+@import "reset";
+@import "variables";
+@import "mixins";
+
+body{
+    padding: 10px;
+}
+
+
+#userCards{
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 20px;
+    @include media(1000px){
+        flex-direction: column;
+        gap: 5px;
+    }
+    .cards{
+        background: #FFFFFF;
+        border: 1px solid rgba(33, 63, 125, 0.06);
+        box-shadow: 3px 5px 20px rgba(0, 0, 0, 0.04);
+        border-radius: 4px;
+        @include redIcon;
+    }
+    
+    .cardWrap{
+        padding-right: 60px;
+    }
+}
+
+#Tables{
+   @include Table;
+}
+
+
+

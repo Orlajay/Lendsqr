@@ -1,0 +1,56 @@
+//mixins
+
+
+
+
+@mixin redIcon{
+    .redIcon{
+        padding-left: 50px;
+        padding: 25px;
+        
+       
+        p{
+            margin:0px;
+            padding-bottom: 5px;
+            padding-top: 5px;
+            font-size: 12px;
+            color: $fadetext;
+        }
+        .number{
+            margin: 0px;
+            font-size: 25px;
+            font-weight: bold;
+            color: #213F7D;
+        }
+        .doubleUser{
+            background: #DF18FF;
+            opacity: 0.1;
+            border-radius: 50%;
+            height: 25px;
+        }
+    }
+}
+
+@mixin Table{
+    table{
+        width: 100%;
+        background: #FFFFFF;
+        border: 1px solid rgba(33, 63, 125, 0.06);
+        box-shadow: 3px 5px 20px rgba(0, 0, 0, 0.04);
+        border-radius: 4px;
+    }
+    th{
+        padding: 8px;
+        text-align: left;
+        color: $fadetext;
+        font-size: 12px;
+    }
+}
+
+@mixin media($query){
+    @media screen and (max-width: $query){
+        @content;
+    }
+
+
+}
